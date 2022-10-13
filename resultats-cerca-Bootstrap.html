@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enllaç al servidor Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/guia-estils.css"> <!-- Referència a la guia d'estil despres de bootstrap-->
+    <link rel="stylesheet" href="css/guia-bootstrap.css"> 
+    <link rel="stylesheet" href="css/guia-cerca.css"> 
+    <title>Paquets IOC</title> 
+</head>
+<body style="background-color: #F4F4F4">
+    <header> 
+        <h1>Paquets IOC</h1>
+        <h2>Tot un mon d’experiències</h2>
+    </header>
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-lg-flex align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="index-Bootstrap.html">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Totes les experiències</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertes</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte-bootstrap.html">Contacte</a>
+                    </li> 
+                    <li class="nav-item" >
+                        <a href="login-bootstrap.html"><img class="login" src="images/usuari.png" alt="login usuari" ></a>            
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <!-- MAIN amb SECCIONS I ASIDE -->
+    <!-- SECCIÓ CERCADOR -->
+    <div class="container-fluid" >
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: #F4F4F4">
+                    <li class="breadcrumb-item"><a href="index-Bootstrap.html">Inici</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Resultats de la cerca</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+
+            <div class="col-xs-12 col-lg-4 col text-left">
+                <h2>Modificar filtres de cerca</h4>
+                <div class="filtres"> 
+                    <form>
+                        <!-- SECCIO EXPERIENCIES -->
+                        <label for="experiencies">Tipus d'experiència:</label>
+                            <select name="experiencies" id="tipus-expericia" class ="experiencies">
+                                <option value="Tipus 1">Tipus 1</option>
+                                <option value="Tipus 2">Tipus 2</option>
+                                <option value="Tipus 3">Tipus 3</option>
+                                <option value="Tipus 4">Tipus 4</option>
+                            </select> 
+                        <!-- CIUTAT -->
+                        <input type="text" placeholder="Ciutat de destí"/>
+                        <!-- OPCIO CALENDARI -->
+                        <label for="calendari">Dates:</label><input type="date" class="calendari" name="calendari">
+                        <p><label for="adults">Adults:</label>
+                            <select name="nombre-adults" class="nombre-persones">
+                                <option value="a1">1</option>
+                                <option value="a2">2</option>
+                                <option value="a3">3</option>
+                                <option value="a4">4</option>
+                            </select>
+                        <label for="nens">Infants:</label>
+                            <select name="nombre-nens" class="nombre-persones">
+                                <option value="n1">1</option>
+                                <option value="n2">2</option>
+                                <option value="n3">3</option>
+                                <option value="n4">4</option>
+                            </select>
+                        </p>
+                        <!-- OPCIO BOTÓ CERCA -->
+                        <input type="submit" value="Torna a cercar" />     
+                    </form>
+                    <aside>
+                        <h2>Banner suscripció newsletter</h4>
+                           <div class="anunci"> 
+                               <a href=""><img class="img-fluid" href="" src="images/banner-newsletter.png" alt="enllaç anunci 1"></a>
+                           </div>
+                   </aside> 
+                </div>
+            </div>
+            <div class="col-xs-12 col-lg-8">
+                <main style="background-color: white">
+                    <h2>Resultats de la cerca</h2>
+                    <select class="form-select form-select-sm" aria-label="Disabled select example">
+                        <option selected>Ordena per</option>
+                        <option value="1">Valoració</option>
+                        <option value="2">Preu de més alt a més baix</option>
+                        <option value="3">Preu de més baix a més alt</option>
+                      </select> 
+                    <div class="container-grid">
+                        <div class="row">
+                            <div class="col-xs-12 col-lg-4">
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/experiencia1.png"alt="Experiencia 1"></a>
+                                    <h4>Experiència 1</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>   
+                            </div>
+                            <div class="col-xs-12 col-lg-4" >
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/experiencia2.png"alt="Experiencia 2"></a>
+                                    <h4>Experiència 2</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>
+                            </div>
+                            <div class=" col-xs-12 col-lg-4">
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/experiencia3.png"alt="Experiencia 3"></a>
+                                    <h4>Experiència 3</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-lg-4">
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/oferta1.png"alt="Experiencia 4"></a>
+                                    <h4>Experiència 4</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>   
+                            </div>
+                            <div class="col-xs-12 col-lg-4" >
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/oferta2.png"alt="Experiencia 5"></a>
+                                    <h4>Experiència 5</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>
+                            </div>
+                            <div class=" col-xs-12 col-lg-4">
+                                <div class="caixa">
+                                    <a href="detall-bootstrap.html">
+                                        <img class="img-fluid" src="images/oferta3.png"alt="Experiencia 6"></a>
+                                    <h4>Experiència 6</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                                    <a href=""><img class="icona-petita" href="" src="images/afegir.png" alt="botó comprar">Afegeix-la al carro</a>
+                                </div>
+                            </div>
+                        </div>
+                </main>
+            </div>
+        <div>
+    </div> 
+    <div class="container">
+        <div class="row"> 
+            <div class="text-center">
+            <footer>
+                <div class="py-2">
+                    <a href=""><img class="icona-xarxes" href="" src="images/facebook.png" alt="enllaç facebook"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/instagram.png" alt="enllaç instagram"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/twitter.png" alt="enllaç twitter"></a>
+                </div>
+
+                <p>
+                ExperienciesIOC.cat. Pl. Alcalde Moles 23, 25280 Solsona (Spain) - <a href="">Política de la web</a><br />
+                </p>
+            </footer>
+        </div> 
+        </div>
+    </div> 
+</body>
+</html>

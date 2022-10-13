@@ -1,0 +1,232 @@
+/* Especificacions generals*/
+
+*{
+  font-family: Helvetica;
+  font-size: 20px;
+  color:black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 2px;
+    margin: 2px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  font-size: 14px;
+  text-align: center;
+}
+
+body {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* ICONES */
+.icona-petita{
+  width: 15%;
+}
+
+.icona-xarxes{
+  width: 50px;
+}
+
+
+/* ESTILS FORMULARI*/
+
+/* 2. Estil Formulari - Camp de text */
+input[type=text], input[type=password]{
+  margin: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: .25em;
+  background: #ffffff;
+  font-size: 18px;
+
+}
+/* 1.Boto de cerca o enviament*/
+input[type=submit] {
+  margin: 10px;
+  border: none;
+  box-shadow: none;
+  border-radius: .25em;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 40px;
+  cursor: pointer;
+  background: #3C4A6D;
+}
+  /* Input*/
+input[type=text], input[type=password]{
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
+}
+  /* Efecte d'enfosquir voltant d'input text  quan es fa focus*/
+input[type=text]:focus,input[type=password]:focus {
+    border-color: #3C4A6D;
+    box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
+}
+input[type=text]:focus, input[type=password]:focus, select:focus {
+  outline: none;
+}
+
+
+/*******ESTIL PER LA PRESENTACIÓ DE LA GUIA_ESTILS.HTML ********/
+/* PRESENTACIÓ CAIXES COLORS */
+/* Estil contenidor de caixes de colors, logo...*/
+.cd-tipografia li {
+  width: 24%;
+  float: inline-end;
+  margin: 0 7.25% 1em 0;
+  text-align: center
+}
+
+.cd-tipografia-text .cd-color-swatch {
+position: relative;
+}
+
+.cd-tipografia-text li {
+  width: 96%;
+  margin: 0 7.25% 1em 0;
+  text-align: center
+}
+
+.caixa-guia h1::after,
+.caixa-guia h2::after,
+.caixa-guia h4::after {
+    content: ' - Aa';
+    color: #3C4A6D;
+}
+
+.cd-colors li {
+  width: 11%;
+  float: inline-end;
+  margin: 0 7.25% 1em 0;
+  text-align: center
+}
+
+/*  Estil colors: ordre de caixes i mostra de colors*/
+/* Estil colors: mostra caixes*/
+.cd-colors .cd-color-swatch {
+  position: relative;
+  width: 100%;
+  padding: 50% 0;
+}
+
+.caixa-guia {
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background: #ffffff;
+  padding: 6px;
+  
+}
+/* Mostrar caixa tipografia */
+.cd-tipografia .cd-color-swatch {
+  position: relative;
+}
+
+.cd-colors li:nth-of-type(1) .cd-color-swatch {
+  background: #FFFFFF;
+}
+.cd-colors li:nth-of-type(2) .cd-color-swatch {
+  background: #F4F4F4;
+}
+.cd-colors li:nth-of-type(3) .cd-color-swatch {
+  background:  #5dcfd1;
+}
+.cd-colors li:nth-of-type(4) .cd-color-swatch {
+  background:  #445374;
+}
+.cd-colors li:nth-of-type(5) .cd-color-swatch {
+  background: #1D2D53;
+} 
+
+.cd-icones li {
+  width: 11%;
+  float: inline-end;
+  margin: 0 7.25% 1em 0;
+  text-align: center
+}
+
+.cd-botons li {
+  width: 40%;
+  float: inline-end;
+  margin: 0 7.25% 1em 0;
+  text-align: center
+}
+div .imatge-guia {
+  width: 100%;
+}
+/* Linies separadores entre apartats*/
+.hr-lines{
+  position: relative;
+  max-width: 600px;
+  margin: 25px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  display: block;
+  height: 1px;
+  width: 170px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background:#3C4A6D;
+}
+.hr-lines:after{
+  content:" ";
+  height: 1px;
+  width: 170px;
+  background: #3C4A6D;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: .25em;
+  font-size: 1.4rem;
+  font-family: "Helvetica";
+  color: #ffffff;
+  padding: .6em 2.2em;
+  cursor: pointer;
+  background: #3C4A6D;
+}
+
+.div_top_hypers {
+  background-color:#eeeeee;    
+}
+.ul_top_hypers li{
+  float: right;
+}
+/* Espaiem elements*/
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}

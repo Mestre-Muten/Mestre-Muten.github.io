@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enllaç al servidor Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/guia-estils.css"> <!-- Referència a la guia d'estil despres de bootstrap-->
+    <link rel="stylesheet" href="css/guia-bootstrap.css"> 
+
+    <title>Paquets IOC</title> 
+</head>
+<body style="background-color: #F4F4F4">
+    <header> 
+        <h1>Paquets IOC</h1>
+        <h2>Tot un mon d’experiències</h2>
+    </header>
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-lg-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index-Bootstrap.html">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Totes les experiències</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertes</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte-bootstrap.html">Contacte</a>
+                    </li> 
+                    <li class="nav-item" >
+                        <a href="login-bootstrap.html"><img class="login" src="images/usuari.png" alt="login usuari" ></a>            
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background-color: #F4F4F4">
+                <li class="breadcrumb-item"><a href="index-Bootstrap.html">Inici</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Login</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container" >
+        <form class="col-lg-6 offset-lg-3 text-center mt-4 mb-4" action="#">
+            <h2>Crea un nou usuari</p>
+            <input type="email" class="form-control mb-4" placeholder="Introdueix un correu electrònic">
+            <input type="text" class="form-control mb-4" placeholder="Introdueix un nom d'usuari">
+            <input type="password"class="form-control mb-4" placeholder="Introdueix una contrasenya">
+            <label for="calendari" >Data de naixement:</label><input type="date" class="calendari" name="calendari">
+            
+            <div class="d-flex justify-content-around">
+                <div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="checkbox-recordar" id="recorda-check">
+                        <label class="control-label" for="recorda-check">Vols subscriure't a la nostra newsletter?</label>
+                    </div>
+                </div>
+            </div>
+            <button class="btn mt-5 mb-5" type="submit">Crea l'usuari</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row"> 
+            <div class="text-center">
+            <footer>
+                <div class="py-2">
+                    <a href=""><img class="icona-xarxes" href="" src="images/facebook.png" alt="enllaç facebook"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/instagram.png" alt="enllaç instagram"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/twitter.png" alt="enllaç twitter"></a>
+                </div>
+
+                <p>
+                ExperienciesIOC.cat. Pl. Alcalde Moles 23, 25280 Solsona (Spain) - <a href="">Política de la web</a><br />
+                </p>
+            </footer>
+        </div> 
+        </div>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,14 @@
+.experiencies{
+    padding: 5px 100px;
+}
+input[type=text] {
+    padding: 4px 50px;
+}   
+
+input[type=submit] {
+    transform: translateX(35%);
+}
+
+.form-select{
+    margin-bottom: 10px;
+}

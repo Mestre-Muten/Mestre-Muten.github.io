@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang=”es”>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enllaç al servidor Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/guia-estils.css"> <!-- Referència a la guia d'estil despres de bootstrap-->
+    <link rel="stylesheet" href="css/guia-bootstrap.css"> 
+
+    <title>Paquets IOC</title> 
+</head>
+<body style="background-color: #F4F4F4">
+    <header> 
+        <h1>Paquets IOC</h1>
+        <h2>Tot un mon d’experiències</h2>
+    </header>
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto d-lg-flex align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index-Bootstrap.html">Inici</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Totes les experiències</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ofertes</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacte-bootstrap.html">Contacte</a>
+                    </li> 
+                    <li class="nav-item" >
+                        <a href="login-bootstrap.html"><img class="login" src="images/usuari.png" alt="login usuari" ></a>            
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </nav>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" style="background-color: #F4F4F4">
+                <li class="breadcrumb-item"><a href="index-Bootstrap.html">Inici</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacte</li>
+            </ol>
+        </nav>
+    </div>  
+      
+    <!-- MAIN amb SECCIONS I ASIDE -->
+    <!-- SECCIÓ CERCADOR -->
+    <div class="container">
+        <form class="col-lg-6 offset-lg-3 text-center mt-4 mb-4" action="#">
+            <h2>Formulari de contacte</p>
+            <input type="text" class="form-control mb-4" placeholder="El seu nom i cognoms">
+            <input type="text"  class="form-control mb-4" placeholder="E-mail">
+            <label>Tema</label>
+            <select class="mb-4" style="background-color: white">
+                <option value="" disabled>Trii una opció</option>
+                <option value="1" selected>Informació general</option>
+                <option value="2">Avisar d'un error</option>
+                <option value="3">Departament comercial</option>
+             </select>
+
+            <div class="missatge">
+                <textarea class="form-control"  rows="6" placeholder="Escrigui aquí el seu missatge"></textarea>
+            </div>
+
+            <div class="custom-control mt-4 mb-4">
+                <input class="checkbox-contacte" type="checkbox">
+                <label>Envia'm una còpia del formulari al correu electrònic</label>
+            </div>
+            <button class="btn" type="submit">Envia el formulari</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row"> 
+            <div class="text-center">
+            <footer>
+                <div class="py-2">
+                    <a href=""><img class="icona-xarxes" href="" src="images/facebook.png" alt="enllaç facebook"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/instagram.png" alt="enllaç instagram"></a>
+                    <a href=""><img class="icona-xarxes" href="" src="images/twitter.png" alt="enllaç twitter"></a>
+                </div>
+
+                <p>
+                ExperienciesIOC.cat. Pl. Alcalde Moles 23, 25280 Solsona (Spain) - <a href="">Política de la web</a><br />
+                </p>
+            </footer>
+        </div> 
+        </div>
+    </div> 
+</body>
+</html>

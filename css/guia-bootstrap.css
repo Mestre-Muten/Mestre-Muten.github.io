@@ -1,0 +1,73 @@
+/*ESTIL BANNER*/
+nav{
+    background-color: #5dcfd1;
+}
+.container-fluid-navegador{
+    background-color: #5dcfd1;
+}
+nav-link {
+    font-size: 40px;
+}
+.login {
+    width: 50px;
+    height: 50px;
+}
+
+/*ESTIL FORM CERCA*/
+form{
+    border-radius: .25em; 
+    margin-bottom: 30px; 
+}
+form label{
+    margin:10px;
+}
+.experiencies{
+    background: #ffffff;
+    margin:10px;
+    padding: 5px 100px;
+}
+
+input[type=text],input[type=password],input[type=email] {
+    margin:10px;
+    padding: 4px 5px;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
+}
+.nombre-persones{
+    background: #ffffff;
+    margin:10px;
+    padding: 5px 10px;
+
+}
+.calendari:focus{    
+    border-color: #3C4A6D;
+    outline: none
+}
+.icona-petita{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixa{
+    background: #445374;
+    border-radius: .25em;
+    margin-bottom: 5px;
+
+}
+.caixa a{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    text-decoration: none;
+}
+.anunci{
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+.py-2 a {
+    margin:2px;
+}
+
+
